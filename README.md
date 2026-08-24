@@ -4,7 +4,7 @@ Repositório dedicado aos meus estudos e práticas da disciplina de Programaçã
 
 ## Tecnologias
 - HTML5
-- CSS3 (em breve)
+- CSS3
 - JavaScript (em breve)
 
 ## Como visualizar
