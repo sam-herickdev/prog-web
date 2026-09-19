@@ -1,4 +1,4 @@
-/* Estrutura geral */
+/*Estrutura geral*/
 
 body {
     background-color: #F5F7FA;
@@ -12,7 +12,7 @@ main {
 }
 
 
-/* Cabeçalho */
+/*Cabeçalho*/
 
 header {
     background-color: #172554;
@@ -32,7 +32,7 @@ header p {
 }
 
 
-/* Conteúdo */
+/*Conteúdo*/
 
 section {
     background-color: #FFFFFF;
@@ -56,7 +56,7 @@ section p {
 }
 
 
-/* Links */
+/*Links*/
 
 section a {
     display: inline-block;
@@ -73,7 +73,7 @@ section a:hover {
 }
 
 
-/* Projetos */
+/*Projetos*/
 
 .projeto {
     background-color: #F5F7FA;
@@ -89,7 +89,7 @@ section a:hover {
 }
 
 
-/* Rodapé */
+/*Rodapé*/
 
 footer {
     background-color: #0F172A;
