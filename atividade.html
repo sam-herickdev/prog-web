@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição no Curso de Front-End</title>
+</head>
+<body>
+
+  <h1>Inscrição no Curso de Front-End</h1>
+  <p>Preencha os dados abaixo para realizar sua inscrição.</p>
+
+  <p>
+    <a href="#dados-pessoais">Dados pessoais</a>
+    <a href="#formacao">Formação</a>
+    <a href="#preferencias">Preferências</a>
+  </p>
+
+  <form>
+    <fieldset id="dados-pessoais">
+      <legend>1. Dados pessoais</legend>
+
+      <p>
+        <label for="nome">Nome completo:</label><br>
+        <input type="text" id="nome" name="nome" required>
+      </p>
+
+      <p>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+      </p>
+
+      <p>
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" autocomplete="on" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" name="telefone" required>
+      </p>
+
+      <p>
+        <label for="nascimento">Data de nascimento:</label><br>
+        <input type="date" id="nascimento" name="nascimento" required>
+      </p>
+
+      <p>
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" required>
+      </p>
+    </fieldset>
+
+    <fieldset id="formacao">
+      <legend>2. Formação e curso de interesse</legend>
+
+      <p>
+        <label for="curso">Curso de interesse:</label><br>
+        <select id="curso" name="curso" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="front-end">Front-End</option>
+        </select>
+      </p>
+
+      <p>
+        <label>Escolaridade:</label><br>
+        <label><input type="radio" name="escolaridade" value="ensino-medio" required> Ensino médio</label>
+        <label><input type="radio" name="escolaridade" value="graduacao" required> Graduação</label>
+        <label><input type="radio" name="escolaridade" value="pos-graduacao" required> Pós-graduação</label>
+      </p>
+
+      <p>
+        <label for="instituicao">Instituição de ensino:</label><br>
+        <input type="text" id="instituicao" name="instituicao" required>
+      </p>
+
+      <p>
+        <label for="semestre">Semestre atual:</label><br>
+        <input type="number" id="semestre" name="semestre" min="1" required>
+      </p>
+
+      <p>
+        <label for="curriculo">Currículo ou comprovante:</label><br>
+        <input type="file" id="curriculo" name="curriculo" required>
+      </p>
+    </fieldset>
+    
+<fieldset id="preferencias">
+      <legend>3. Preferências e observações</legend>
+
+      <p>
+        <label>Modalidade preferida:</label><br>
+        <label><input type="radio" name="modalidade" value="presencial" required> Presencial</label>
+        <label><input type="radio" name="modalidade" value="online" required> Online</label>
+        <label><input type="radio" name="modalidade" value="hibrida" required> Híbrida</label>
+      </p>
+
+      <p>
+        <label>Temas de interesse:</label><br>
+        <label><input type="checkbox" name="temas" value="html-acessibilidade"> HTML e acessibilidade</label><br>
+        <label><input type="checkbox" name="temas" value="css-interfaces"> CSS e interfaces</label><br>
+        <label><input type="checkbox" name="temas" value="javascript-dom"> JavaScript e DOM</label><br>
+        <label><input type="checkbox" name="temas" value="integracao-banco"> Integração com bancos de dados</label>
+      </p>
+
+      <p>
+        <label for="horario">Melhor horário para contato:</label><br>
+        <input type="time" id="horario" name="horario" required>
+      </p>
+
+      <p>
+        <label for="nivel-html">Nível de conhecimento em HTML:</label><br>
+        <input type="range" id="nivel-html" name="nivel-html" min="0" max="10" value="5" required> 5
+      </p>
+
+      <p>
+        <label for="portfolio">Site ou portfólio:</label><br>
+        <input type="url" id="portfolio" name="portfolio" placeholder="https://exemplo.com" required>
+      </p>
+
+      <p>
+        <label for="observacoes">Observações:</label><br>
+        <textarea id="observacoes" name="observacoes" placeholder="Escreva informações adicionais..."></textarea>
+      </p>
+
+      <p>
+        <label><input type="checkbox" name="aceite_informacoes" required> Aceito receber informações sobre o curso.</label>
+      </p>
+    </fieldset>
+
+    <p>
+      <button type="submit">Enviar inscrição</button>
+      <button type="reset">Limpar formulário</button>
+    </p>
+  </form>
+
+  <footer>
+    <p><em>Instituto Federal do Ceará — Disciplina de Front-End</em><br>
+    <p>E-mail: <a href="mailto:front-end@exemplo.edu.br">front-end@exemplo.edu.br</a></p>
+    <p>© 2026 — Atividade</p>
+    <p>Feito por: Samuel Herick Rocha Batista Alves</p>
+  </footer>
+  </form>
+
+</body>
+</html>
