@@ -1,6 +1,4 @@
-/* 1. VARIÁVEIS CSS (TEMA CLARO E ESCURO)*/
-
-/*TEMA CLARO (Padrão)*/
+/* Variaveis de cores tema claro e escuro */
 :root {
     --fundo-pagina: #f5f7fa;
     --fundo-cartao: #ffffff;
@@ -14,7 +12,7 @@
     --sombra-cartao: rgba(15, 23, 42, 0.08);
 }
 
-/*TEMA ESCURO*/
+/* Tema Escuro */
 body.tema-escuro {
     --fundo-pagina: #0f172a;
     --fundo-cartao: #1e293b;
@@ -28,8 +26,7 @@ body.tema-escuro {
     --sombra-cartao: rgba(0, 0, 0, 0.4);
 }
 
-/*2. ESTRUTURA GERAL*/
-
+/* Estilo geral */
 body {
     background-color: var(--fundo-pagina);
     color: var(--cor-texto-corpo);
@@ -39,65 +36,67 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.conteudo {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+.conteudo-principal {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
-/*3. CABEÇALHO*/
-
+/* Cabecalho */
 .cabecalho {
     background-color: var(--fundo-cabecalho);
     text-align: center;
-    padding: 40px 20px;
+    padding: 35px 20px;
 }
 
 .cabecalho h1 {
     margin: 0;
-    font-size: 40px;
-    color: var(--cor-texto-cabecalho); /* Garante texto claro */
+    font-size: 36px;
+    color: var(--cor-texto-cabecalho);
 }
 
 .cabecalho p {
     font-size: 18px;
-    margin-top: 10px;
-    color: var(--cor-texto-cabecalho); /* Garante texto claro */
+    margin-top: 8px;
+    color: var(--cor-texto-cabecalho);
     opacity: 0.9;
 }
 
-/*4. SEÇÕES E CARTÕES*/
-
+/* Cartoes e secoes */
 .cartao {
     background-color: var(--fundo-cartao);
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 10px var(--sombra-cartao);
+}
+
+/* Estilizando o id especifico */
+#sobre-mim {
+    border-left: 4px solid var(--cor-hover);
 }
 
 .cartao h2 {
     color: var(--cor-texto-principal);
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .cartao p {
     color: var(--cor-texto-corpo);
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
-/*5. BOTÕES E LINKS*/
-
+/* Botoes */
 .botao {
     display: inline-block;
     background-color: var(--fundo-cabecalho);
-    color: #ffffff !important; /* Texto branco no botão */
-    padding: 10px 18px;
+    color: #ffffff !important;
+    padding: 8px 16px;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 5px;
     margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
@@ -107,14 +106,12 @@ body {
     background-color: var(--cor-hover);
 }
 
-/*6. BLOCOS DE PROJETO*/
-
+/* Blocos de Projetos */
 .projeto {
     background-color: var(--fundo-pagina);
-    padding: 20px;
+    padding: 15px;
     margin-top: 15px;
-    border-radius: 8px;
-    border-left: 4px solid var(--fundo-cabecalho);
+    border-radius: 6px;
 }
 
 .projeto h3 {
@@ -122,16 +119,16 @@ body {
     color: var(--cor-texto-principal);
 }
 
-/*7. RODAPÉ*/
-
+/* Rodape */
 .rodape {
     background-color: var(--fundo-rodape);
     color: var(--cor-texto-rodape);
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
 }
 
 .rodape p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 4px 0;
+    font-size: 13px;
 }
